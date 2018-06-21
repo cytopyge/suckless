@@ -1,0 +1,3 @@
+#!/bin/bash
+temp=$(sensors | grep 'id 0' | awk '{print substr($0, 17, 2)}')
+echo $temp°
