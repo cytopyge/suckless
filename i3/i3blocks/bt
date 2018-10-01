@@ -1,5 +1,0 @@
-#!/bin/bash
-bt_status=$(systemctl status bluetooth | grep active | awk '{print $2}')
-if [[ $bt_status == 'active' ]]; then
-	echo -e 'b'
-fi
